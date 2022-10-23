@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>OPEN MODEL</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="btn" onclick="popupToggle();">
+            OPEN MODEL
+        </div>
+
+        <!-- model content -->
+        <div id="popup">
+            <div class="content">
+                <img src="Umbrella_Corporation_logo.svg">
+                <h2></h2>
+                <p></p>
+                <div class="inputBox">
+                    <input type="email" placeholder="Enter Email"/>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Sign Up"/>
+                </div>
+            </div>
+            <a class="close" onclick="popupToggle();">
+                <img src="close.png">
+            </a>
+        </div>
+        <script>
+            const popupToggle = () => {
+                const popup = document.getElementById('popup');
+                popup.classList.toggle('active');
+            }
+
+        </script>
+    </body>
+</html>
